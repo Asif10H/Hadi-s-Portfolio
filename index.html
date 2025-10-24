@@ -6,46 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <title>Hadi's Portfolio</title>
+    <title>Hady's Portfolio</title>
 </head>
 
 
 <body>
+    <!-- header section start -->
     <header class="shadow-md">
-    <nav class="flex md:justify-around justify-between items-center px-6 py-4">
-        <div>
-            <!-- <img class="w-48 h-12" src="./assets/images/hadi-logo.svg" alt=""> -->
-            <span class="text-2xl font-bold">Hadi's Portfolio</span>
-        </div>
-        <!-- Nav Links (Desktop) -->
-        <ul class="hidden md:flex space-x-6 text-lg">
+        <nav class="flex md:justify-around justify-between items-center px-6 py-4">
+          <div>
+                <!-- <img class="w-40 h-12 rounded-2xl" src="./assets/images/Logo.jpeg" alt=""> -->
+                <!-- <span class="text-2xl font-bold">Hady's Portfolio</span> -->
+                <a href="/" class="text-2xl font-bold flex items-center">
+                    <span class="bg-sky-600 text-white rounded-md px-2 py-0.5">Hady's</span>
+                    <span class="text-gray-700 ml-2 font-semibold">Portfolio</span>
+                </a>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-lg">
+                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
+                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
+                <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
+                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
+                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </nav>
+
+        <ul id="mobile-menu" class="hidden flex-col items-center md:hidden space-y-4 py-6 text-lg">
             <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
             <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
             <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
             <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
             <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
         </ul>
-        <button id="menu-btn" class="md:hidden focus:outline-none">
-            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-    </nav>
+    </header>
 
-    <ul id="mobile-menu" class="hidden flex-col items-center md:hidden space-y-4 py-6 text-lg">
-        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
-        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
-        <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
-        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
-        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
-    </ul>
-</header>
+    <!-- header section end -->
 
-<script src="./assets/js/main.js"></script>
+    <!-- main section start -->
+    <section class="p-4 sm:p-8 mt-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8 sm:px-0">
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-1.jpg" alt="Artwork 1" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-2.jpg" alt="Artwork 2" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-3.jpg" alt="Artwork 3" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-20.jpg" alt="Artwork 4" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-5.jpg" alt="Artwork 5" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="assets/images/art-6.jpg" alt="Artwork 6" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-7.jpg" alt="Artwork 7" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-9.jpg" alt="Artwork 8" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-10.jpg" alt="Artwork 1" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-12.jpg" alt="Artwork 2" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-13.jpg" alt="Artwork 3" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-14.jpg" alt="Artwork 4" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-15.jpg" alt="Artwork 5" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="assets/images/art-16.jpg" alt="Artwork 6" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-17.jpg" alt="Artwork 7" class="w-full h-full object-cover">
+            </a>
+            <a href=""
+                class="block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img src="/assets/images/art-19.jpg" alt="Artwork 8" class="w-full h-full object-cover">
+            </a>
+        </div>
+    </section>
+
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer class="border-t-2 border-t-[#D0D0D0] shadow-md p-4">
+        <div class="flex items-center justify-around">
+            <div class="">
+                <div>
+                    <a href="https://www.facebook.com/h.m.hady.2024" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook m-2"></i></a>
+                    <a href="https://www.instagram.com/artoonist_hplus" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram m-2"></i></a>
+                    <a href="https://www.youtube.com/@artoonist_hplus" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube m-2"></i></a>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-sm text-gray-600 text-center leading-relaxed">
+                    © 2025 Hady | Artoonist Hplus Ltd.
+                    <br>
+                    <span class="font-medium">Designed with Passion</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
