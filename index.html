@@ -9,41 +9,43 @@
     <title>Hadi's Portfolio</title>
 </head>
 
+
 <body>
     <header class="shadow-md">
-        <!-- <div class="flex flex-col items-center space-y-5">
-            <a href="#" class="flex flex-col items-center text-center">
-                <span class="text-3xl font-serif tracking-widest text-black mt-2">Hadi's Portfolio</span>
-            </a>
-        </div> -->
-        <nav class="p-4 flex items-center justify-around">
-            <div>
-                <!-- <img class="w-48 h-12" src="./assets/images/hadi-logo.svg" alt=""> -->
-                <span class="text-3xl font-bold">Hadi's Portfolio</span>
-            </div>
-            <div class="">
-                <ul class="flex">
-                    <li>
-                        <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a>
-                    </li>
-                    <li>
-                        <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a>
-                    </li>
-                    <li>
-                        <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a>
-                    </li>
-                    <li>
-                        <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a>
-                    </li>
-                    <li>
-                        <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="flex md:justify-around justify-between items-center px-6 py-4">
+        <div>
+            <!-- <img class="w-48 h-12" src="./assets/images/hadi-logo.svg" alt=""> -->
+            <span class="text-2xl font-bold">Hadi's Portfolio</span>
+        </div>
+        <!-- Nav Links (Desktop) -->
+        <ul class="hidden md:flex space-x-6 text-lg">
+            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
+            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
+            <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
+            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
+            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </nav>
 
-    <!-- footer section start -->
+    <ul id="mobile-menu" class="hidden flex-col items-center md:hidden space-y-4 py-6 text-lg">
+        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
+        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
+        <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
+        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
+        <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
+    </ul>
+</header>
+
+<script src="./assets/js/main.js"></script>
 </body>
-
 </html>
