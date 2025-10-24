@@ -2,31 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/output.css" rel="stylesheet" />
     <title>Hady's Portfolio</title>
 </head>
 
 <body>
-    <!-- header section start -->
     <header class="shadow-md">
         <nav class="flex md:justify-around justify-between items-center px-6 py-4">
-           <div>
-                <!-- <img class="w-40 h-12 rounded-2xl" src="./assets/images/Logo.jpeg" alt=""> -->
-                <!-- <span class="text-2xl font-bold">Hady's Portfolio</span> -->
+            <div>
                 <a href="/" class="text-2xl font-bold flex items-center">
                     <span class="bg-sky-600 text-white rounded-md px-2 py-0.5">Hady's</span>
                     <span class="text-gray-700 ml-2 font-semibold">Portfolio</span>
                 </a>
             </div>
             <ul class="hidden md:flex space-x-6 text-lg">
-                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
-                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
-                <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
-                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
-                <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
+                <li>
+                    <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a>
+                </li>
+                <li>
+                    <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a>
+                </li>
+                <li>
+                    <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a>
+                </li>
+                <li>
+                    <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a>
+                </li>
+                <li>
+                    <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a>
+                </li>
             </ul>
             <button id="menu-btn" class="md:hidden focus:outline-none">
                 <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
@@ -41,21 +47,90 @@
         </nav>
 
         <ul id="mobile-menu" class="hidden flex-col items-center md:hidden space-y-4 py-6 text-lg">
-            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a></li>
-            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a></li>
-            <li> <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a></li>
-            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a></li>
-            <li><a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a></li>
+            <li>
+                <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/">home</a>
+            </li>
+            <li>
+                <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/gallery.html">gallery</a>
+            </li>
+            <li>
+                <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/available.html">available</a>
+            </li>
+            <li>
+                <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/about.html">about me</a>
+            </li>
+            <li>
+                <a class="p-3 uppercase font-bold hover:text-[#4AC5C0]" href="/contact.html">contact</a>
+            </li>
         </ul>
     </header>
 
-    <!-- header section end -->
+    <div class="container my-12 mx-auto px-2 md:px-4">
+        <section class="mb-32">
+            <div class="flex justify-center">
+                <div class="text-center md:max-w-xl lg:max-w-3xl">
+                    <h2 class="mb-12 px-6 text-3xl font-bold">Get In Touch</h2>
+                </div>
+            </div>
 
-    
-    <!-- contact section start -->
-    <h1 class="text-4xl font-bold text-center text-gray-800">
-        This Section is Coming Soon!
-    </h1>
+            <div class="flex items-center justify-center ">
+                <form  action="https://formspree.io/f/mnngeege" method="POST"
+                    class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+
+                    <div class="mb-3 w-full">
+                        <label class="block font-medium mb-0.5 text-sky-600" htmlFor="contact-name">
+                            Name
+                        </label>
+                        <input type="text" name="name" class="px-2 py-2 border w-full outline-none rounded-md"
+                            id="contact-name" placeholder="Name" />
+                    </div>
+
+                    <div class="mb-3 w-full">
+                        <label class="block font-medium mb-0.5 text-sky-600" htmlFor="contact-email">
+                            Email
+                        </label>
+                        <input type="email" name="email" class="px-2 py-2 border w-full outline-none rounded-md"
+                            id="contact-email" placeholder="Enter your email address" />
+                    </div>
+
+                    <div class="mb-3 w-full">
+                        <label class="block font-medium mb-0.5 text-sky-600" htmlFor="contact-message">
+                            Message
+                        </label>
+                        <textarea class="px-2 py-2 border rounded-[5px]  w-full outline-none" name="message"
+                            id="contact-message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="mb-6 inline-block w-full rounded bg-sky-600 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-sky-700">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+     <footer class="border-t-2 border-t-[#D0D0D0] shadow-md p-4">
+        <div class="flex items-center justify-around">
+            <div class="">
+                <div>
+                    <a href="https://www.facebook.com/h.m.hady.2024" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook m-2"></i></a>
+                    <a href="https://www.instagram.com/artoonist_hplus" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram m-2"></i></a>
+                    <a href="https://www.youtube.com/@artoonist_hplus" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube m-2"></i></a>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-sm text-gray-600 text-center leading-relaxed">
+                    © 2025 Hady | Artoonist Hplus Ltd.
+                    <br>
+                    <span class="font-medium">Designed with Passion</span>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
 </body>
